@@ -1,2 +1,2 @@
 # T-Zone
-Eating, drinking, playing, happy.
+##### Studying everything as possible as I can...
