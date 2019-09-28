@@ -1,0 +1,140 @@
+/*顶部导航栏*/
+.topmenu
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff6600;
+
+}
+.topmenu li
+{
+    float: left;
+}
+.topmenu li a
+{
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+.topmenu li a:hover
+{
+    background-color: #ff8d42;
+}
+.topmenu li a:active
+{
+    background-color: #ff8d42;
+}
+
+.head_img
+{
+    float: right;
+    margin-top: 8px;
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+}
+.uid
+{
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin-top: 23px;
+    margin-right: 10px;
+}
+
+/*!*添加头像下拉选项*!*/
+/*.head_drop*/
+/*{*/
+    /*position: absolute;*/
+    /*display: none;*/
+    /*text-align: center;*/
+    /*border: 1px solid rgb(255, 102, 0);*/
+/*}*/
+/*.head_drop a*/
+/*{*/
+    /*display: block;*/
+    /*background: rgba(255, 102, 0, 0.5);*/
+    /*margin: 0;*/
+    /*padding: 20px;*/
+    /*color: white;*/
+    /*font-size: 15px;*/
+    /*border: 1px solid #ffb584;*/
+/*}*/
+/*.topmenu:hover .head_drop*/
+/*{*/
+    /*display: block;*/
+/*}*/
+
+
+.content
+{
+    overflow: auto;
+    width: 75%;
+}
+
+.column
+{
+    float: left;
+    padding: 5px;
+    margin: 5px 0;
+}
+.clearfix::after
+{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+/*左侧菜单栏*/
+.sidemenu
+{
+    width: 25%;
+    border: 1px solid #e6e6e6;
+    height: 1000px;
+    font-size: 17px;
+}
+.sidemenu ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sidemenu ul a
+{
+    margin-bottom: 5px;
+
+    display: block;
+    padding: 8px;
+    background-color: #f98026;
+    text-decoration: none;
+    color:white;
+}
+.sidemenu li a:hover
+{
+    background-color: #ff8d42;
+    color:white;
+}
+.sidemenu li a:active
+{
+    background-color: #ff8d42;
+    color: white;
+}
+/*底部*/
+.footer
+{
+    background-color: #ff6600;
+    color:#ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+.footer p
+{
+    padding: 0;
+    margin: 0;
+}

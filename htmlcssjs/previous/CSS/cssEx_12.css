@@ -1,0 +1,36 @@
+#round
+{
+    border: 15px solid transparent;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    background-image: url('../PIC/bgw.jpg');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 100% 100%;
+    border-image: url('../PIC/border.png') 28 28 round;
+}
+#stretch
+{
+    border: 15px solid transparent;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    background-image: url('../PIC/bgw.jpg');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 100% 100%;
+    border-image: url('../PIC/border.png') 28 28 stretch;
+}
+#tt
+{
+    border: 15px solid transparent;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    background-image: url('../PIC/bgw.jpg');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 100% 100%;
+    border-image: url('../PIC/border1.jpg') 62 62 round;
+}

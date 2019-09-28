@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ajax test</title>
+        <script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $.ajax({
+                        type : "get",
+                        url : "test.json",
+                        dataType : "json",
+                        success : function(res){
+                            $.each(res, function (index, obj) {
+                                $("#box").append("<p>" + obj['name'] + " : " +  //获取name
+                                    obj['data'] + "</p>")               //获取data
+                            });
+                        }
+                    });
+                });
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <button>点我试试</button>
+        <div id="box"></div>
+    </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta 1.对界面进行全局设置 2.关键词，关键字 -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- http-equiv 解释驱动 content 解析器 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <link href="../bootstrap-3.3.7/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./index.css" type="text/css" rel="stylesheet">
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!-- IE9 以下版本，js备选方案 -->
+    <!-- [if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    [endif] -->
+    <title>Home</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar1">
+    <!-- 导航部分 -->
+    <div class="">
+        <nav class="navbar navbar-default navbar-fixed-top" id="#navbar1">
+            <!-- 导航条 -->
+            <div class="container">
+                <div class="container-fluid">
+                    <!-- 左右两边各空 15 px -->
+                    <div class="navbar-header">
+                        <!-- 导航头部 -->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img class="logo" src="./img/logo.png">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#foot">关于我们</a></li>
+                            <li><a href="#content">服务项目</a></li>
+                            <li><a href="#contact">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- 展板/轮播区域 -->
+    <div class="banner">
+        <div class="container">
+            <h1>博远科技，祝您成功！</h1>
+            <h3 id="contact">用钱创造快乐</h3>
+            <hr>
+            <ul class="list-inline">
+                <li><a href="#" class="btn btn-lg btn-success"><i class="fa fa-weixin"></i> 微信</a></li>
+                <li><a href="#" class="btn btn-lg btn-info"><i class="fa fa-qq"></i> QQ</a></li>
+                <li><a href="#" class="btn btn-lg btn-danger"><i class="fa fa-weibo"></i> 微博</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 页面内容展示 -->
+    <div class="content" id="content">
+        <div class="container">
+            <div class="row" id="product-info">
+                <div class="col-lg-5" id="text1" style="display: none">
+                    <h2>移动互联网产品的构筑者</h2>
+                    <h3>我们以产品研发为核心，努力发展业务和渠道，专注于提高产品质量 </h3>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-5" id="img1" style="display: none">
+                    <img src="./img/ipad.png" class="img-responsive">
+                </div>
+            </div>
+            <div class="row" id="product-info">
+                <div class="col-lg-5" id="img2"  style="display: none">
+                    <img src="./img/phones.png" class="img-responsive">
+
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-5" id="text2" style="display: none">
+                    <h2>移动互联网产品的构筑者</h2>
+                    <h3>我们以产品研发为核心，努力发展业务和渠道，专注于提高产品质量 </h3>
+                </div>
+            </div>
+            <div class="row" id="product-info">
+                <div class="col-lg-5" id="text3" style="display: none">
+                    <h2>移动互联网产品的构筑者</h2>
+                    <h3>我们以产品研发为核心，努力发展业务和渠道，专注于提高产品质量 </h3>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-5" id="img3" style="display: none">
+                    <img src="./img/dog.png" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 页脚 -->
+    <div class="foot" id="foot" style="display: none;">
+        <div>
+            <div>
+                <a href="#">首页</a> | 
+                <a href="#">项目案例</a> | 
+                <a href="#">联系我们</a>
+            </div>
+            <br>
+            <div>沪ICP备123456789号</div>
+            <br>
+        </div>
+        <div>Powered by<a href="#">博远科技</a>@2019</div>
+    </div>
+</body>
+<script src="./jQ/jquery-3.3.1.min.js"></script>
+<script src="../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var scroll;
+        var imgDisplay;
+        $("#text1, #img1").slideDown("slow");
+
+        var display = setInterval(function () {
+            scroll = $(document).scrollTop(); 
+            if(scroll >= 35 && scroll < 300){
+                $("#text2, #img2").slideDown("slow");
+            }
+            else if(scroll >= 300 && scroll < 400){
+                $("#text3, #img3").slideDown("slow");
+            }
+
+            imgDisplay = $("#img3").css("display");
+            console.log(imgDisplay);
+            if(imgDisplay == 'block'){
+                $("#foot").slideDown("slow", function () {
+                    clearInterval(display);
+                });
+            }
+        }, 400);        
+        
+    });
+</script>
+</html>

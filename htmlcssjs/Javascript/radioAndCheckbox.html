@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>单、复选按钮更换样式测试</title>
+        <style>
+            fieldset{
+                width: 30%;
+            }
+            /* 单选按钮 */
+            input[type=radio]{
+                opacity: 0;
+                display: inline-block;
+                position: relative;
+                left: 19px;
+            }
+            input[type=radio] + span{
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background: url('../icons/radio1_1.png') no-repeat 0px 4px;
+                background-size: 80%;
+                
+            }
+            input[type=radio]:checked + span{
+                background: url('../icons/radio1_2.png') no-repeat 0px 4px;
+                background-size: 80%;
+            }
+
+            /* 复选框 */
+            input[type=checkbox]{
+                opacity: 0;
+                display: inline-block;
+                position: relative;
+                left: 19px;
+            }
+            input[type=checkbox] + span{
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background: url('../icons/cbox1_1.png') no-repeat 0px 4px;
+                background-size: 80%;
+            }
+            input[type=checkbox]:checked + span{
+                background: url('../icons/cbox1_2.png') no-repeat 0px 4px;
+                background-size: 80%;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>单、复选按钮更换样式测试</legend>
+                <p>单选按钮<br>
+                    <label for="a"><input type="radio" name="rrr" value="a"><span></span>AAAAA</label>
+                
+                    <label for="b"><input type="radio" name="rrr" value="b"><span></span>BBBBB</label>
+                
+                    <label for="c"><input type="radio" name="rrr" value="c"><span></span>CCCCC</label>
+                </p>
+
+                <p>复选框<br>
+                        <label for="x"><input type="checkbox" name="ccc" value="x"><span></span>XXXXX</label>
+                
+                        <label for="y"><input type="checkbox" name="ccc" value="y"><span></span>YYYYY</label>
+                    
+                        <label for="z"><input type="checkbox" name="ccc" value="z"><span></span>ZZZZZ</label>
+                </p>
+            </fieldset>
+        </form>
+
+        <br><br>
+        <img src="../icons/radio1_1.png" alt="radio1_1.png">
+        <img src="../icons/radio1_2.png" alt="radio1_2.png">
+    </body>
+</html>

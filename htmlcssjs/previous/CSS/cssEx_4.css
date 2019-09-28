@@ -1,0 +1,87 @@
+/*伪类*/
+/*anchor 超链接伪类*/
+.anchor
+{
+    
+    padding: 10px;
+    width: 290px;
+    border: 1px solid #c0c0c0;
+}
+a:link                  /*未访问过的链接*/
+{
+    
+    color: chartreuse;
+}
+a:hover                 /*鼠标停在链接上*/
+{   
+    font-size: 20px;
+    color: blue;
+}
+a:visited               /*已访问过的链接*/
+{
+    color: red;
+}
+a:active                /*被点击时*/
+{
+    font-family: KaiTi;
+    color: yellow;
+}
+
+/*第一个div子元素*/
+div:first-child
+{
+    text-decoration: none;
+    padding: 10px;
+    width: 290px;
+    border: 3px solid #c0c0c0;
+    margin: 0 auto;
+}
+
+/*第一个div子元素中的i元素*/
+div:first-child i
+{
+    color: forestgreen;
+    font-family: FZYaoti;
+}
+
+/*所有<p>元素中的第一个<b>元素*/
+p>b:first-child
+{
+    font-family: KaiTi;
+    color: red;
+    font-size: 20px;
+}
+
+/*其他一些伪类  :focus等*/
+.pdiv
+{
+    display: inline-block;
+    border: 1px solid #6c19a3;
+    border-radius: 100px;
+    overflow: auto;
+}
+.pdiv input
+{
+    border-color: rgba(255, 255, 255, 0);
+    outline: medium;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0);
+    
+}
+.pdiv input:focus
+{
+    height: 2.2em;
+}
+.pdiv input[type="submit"]
+{
+    width: 204px; 
+}
+
+
+
+
+
+
+
+
+

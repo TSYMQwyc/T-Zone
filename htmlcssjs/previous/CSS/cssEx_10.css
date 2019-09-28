@@ -1,0 +1,48 @@
+.nav
+{
+    list-style-type: none;
+    background-color: rgb(243, 227, 209);
+    position: relative;
+}
+.nav li
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+.nav li, .nav a
+{
+    height: 44px;
+    display: block;
+}
+.home
+{
+    left: 10px;
+    width: 46px;
+    background: url('../PIC/img_navsprites_hover.gif') 0px 0px;
+}
+.home a:hover
+{
+    background: url('../PIC/img_navsprites_hover.gif') 0px -45px;
+}
+.prev
+{
+    left: 70px;
+    width: 43px;
+    background: url('../PIC/img_navsprites_hover.gif') -47px 0px;
+}
+.prev a:hover
+{
+    background: url('../PIC/img_navsprites_hover.gif') -47px -45px;
+}
+.next
+{
+    left: 130px;
+    width: 43px;
+    background: url('../PIC/img_navsprites_hover.gif') -91px 0px;
+}
+.next a:hover
+{
+    background: url('../PIC/img_navsprites_hover.gif') -91px -45px;
+}

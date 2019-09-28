@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>...</title>
+        <script src="./sample2.js"></script>
+        <script>
+            var isUsernameRight = 0;
+            var isPasswordRight = 0;
+            var isEmailRight = 0;
+            function signupInfo(){
+                if(isUsernameRight == 1 && isPasswordRight == 1 && isEmailRight == 1){
+                    var usnm = document.forms["signup"]["username"].value;      //获取表单输入框中的值
+                    var pswd = document.forms["signup"]["password"].value;
+                    var email = document.forms["signup"]["email"].value;
+                    alert("您的信息:\n" + "用户名:" + usnm + "\n密码:" + pswd + "\n邮箱:" + email);
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+
+            function usernameValidate(input){
+                var usnm = input.value;
+                if(usnm == null || usnm == ""){
+                    document.getElementById("i1").innerHTML = "* 用户名不能为空";
+                }
+                else {
+                    document.getElementById("i1").innerHTML = "";
+                    isUsernameRight = 1;
+                }
+            }
+
+            function passwordValidate(input){
+                var pswd = input.value;
+                if(pswd.length < 8){
+                    document.getElementById("i2").innerHTML = "* 密码长度不能少于8位";
+                }
+                else {
+                    document.getElementById("i2").innerHTML = "";
+                    isPasswordRight = 1;
+                }
+            }
+
+            function emailValidate(input){
+                var email = input.value;
+                var at = email.indexOf("@");
+                var dot = email.lastIndexOf(".");
+                if(at < 5 || dot < at + 2 || dot + 2 >= email.length){
+                    document.getElementById("i3").innerHTML = "* 邮箱长度或格式不正确";
+                }
+                else {
+                    document.getElementById("i3").innerHTML = "";
+                    isEmailRight = 1;
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <h3>哈哈哈哈哈</h3>
+        .
+        .
+        <script>
+        	document.write("<h2>标题2</h2>");
+            document.write("<p>Hello World!");
+        </script>
+        .
+        .
+
+        <p id="mp">正常段落文本</p>
+        <button onclick="mfunc()">加粗</button>
+        <button onclick="yfunc()">正常</button>
+        <br>
+
+        <button onclick="window.alert('warning');">alert</button>
+        <br>
+
+        覆盖html文档
+        <button onclick="document.write(Date());">显示时间</button>
+        <br>
+
+        <button onclick="writeToConsole();">写到控制台</button>
+        <br>
+        <br>
+
+        <form action="" name="signup" onsubmit="signupInfo()" method="GET">
+            <fieldset style="width: 40%">
+                <legend>注册</legend>
+                <p>
+                    <label for="username">用户名 :</label>
+                    <input type="text" name="username" onblur="usernameValidate(this)">
+                    <span id="i1" style="color: red"></span>
+                </p>
+                <p>
+                    <label for="password">密码 :</label>
+                    <input type="password" name="password" onblur="passwordValidate(this)">
+                    <span id="i2" style="color: red"></span>
+                </p>
+                <p>
+                    <label for="email">邮箱 :</label>
+                    <input type="email" name="email" onblur="emailValidate(this)">
+                    <span id="i3" style="color: red"></span>
+                </p>
+                <p>
+                    <input type="submit" value="注册">
+                </p>
+            </fieldset>
+        </form>
+
+    </body>
+</html>

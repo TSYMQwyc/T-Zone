@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ajax test</title>
+        <script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#sub").click(function(){
+                    $.ajax({
+                        type : "get",
+                        url : "http://localhost:9998/test/TestServlet",
+                        data : $("#fm1").serialize(),
+                        dataType : "text",
+                        success : function(res){
+                            $("#result").text(res);
+                        },
+                        error:function(xhr, status, errMsg){
+                            alert("Error T_T 55555555~");
+                        }
+                    });
+                });
+            });
+
+        </script>
+
+    </head>
+    <body>
+        
+        <form id="fm1">
+        	<input type="text" name="u_id">
+        	<br>
+        	
+        	<input type="button" id="sub" value="submit">
+        </form>
+        
+		<label id="result"></label>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flexible{
+    display: flex;      /* 受父容器directioin属性影响 */
+    width: 30%;
+    height: 200px;
+    background: rgb(226, 226, 226);
+    border: 1px solid rgb(112, 112, 112);
+}
+.item{
+    background: rgb(255, 134, 134);
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+.row_flexible{
+    display: flex;
+    flex-direction: row-reverse;
+        /* row | row-reverse | column | column-reverse */  
+    /* 行排列 | 反向行排列 | 列排列 | 反向列排列 */
+
+    width: 25%;
+    background: rgb(226, 226, 226);
+    border: 1px solid rgb(112, 112, 112);
+}
+
+.justify_content{
+    width: 50%;
+    background: rgb(226, 226, 226);
+    border: 1px solid rgb(112, 112, 112);
+    display: flex;
+    justify-content: space-around;
+                            /* flex-start | flex-end | center | space-between | space-around */ 
+    /* 从行头开始填充 | 从行尾开始填充 | 居中填充 | 紧贴行首尾填充 | 均匀填充 */
+}
+.item2{
+    width: 100px;
+    height: 40px;
+    background: rgb(255, 134, 134);
+}
+
+.align_items{
+    width: 30%;
+    height: 300px;
+    background: rgb(226, 226, 226);
+    border: 1px solid rgb(112, 112, 112);
+    display: flex;
+    align-items: baseline;
+    /* flex-start | flex-end | center | baseline | stretch */
+    /* 贴列首 | 贴列底 | 列居中 | @1参与基线对齐 | 拉伸 */
+                                            /* @1一般与flex-start等效，换行时体现出其作用*/
+}                                                                                       /* || */
+.item3{                                                                             /* || */
+    width: 100px;                                                               /* || */
+    background: rgb(255, 134, 134);                             /* || */
+    margin: 5px;                                                                /* || */
+}                                                                                       /* || */
+                                                                                        /* || */
+.flex_wrap{                                                                       /* || */
+    width: 20%;                                                                  /* || */
+    height: 200px;                                                              /* || */
+    background: rgb(226, 226, 226);                             /* || */
+    border: 1px solid rgb(112, 112, 112);                      /* || */
+    display: flex;                                                                 /* || */
+    align-items: baseline;      /* @1  baseline */        /*<---- || */
+    flex-wrap: wrap;        
+    /* wrap | nowrap | wrap-reverse | inherit */
+    /* 换行 | 不换行 | 反转换行 | 继承父容器属性 */
+}
+
+.align_content{
+    width: 20%;                                                                 
+    height: 200px;                                                              
+    background: rgb(226, 226, 226);                             
+    border: 1px solid rgb(112, 112, 112);                      
+    display: flex;              /* #1 */
+    flex-wrap: wrap;        /* #2 */
+    align-content: space-around;     /* #3 */
+                        /* flex-start | flex-end | center | space-between | space-around | stretch */ 
+/* 从行头开始填充 | 从行尾开始填充 | 居中填充 | 紧贴行首尾填充 | 均匀填充 | 拉伸 */
+
+}
+.item3_1{
+    min-height: 50px;
+}

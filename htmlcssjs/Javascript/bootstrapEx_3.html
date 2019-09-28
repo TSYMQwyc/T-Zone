@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./jQ/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>导航</title>
+</head>
+<body>
+    <div class="container">
+        <!-- 普通导航标签 -->
+        <!-- 带下拉菜单的标签 -->
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Community</a></li>
+            <li role="presentation"><a href="#">Central</a></li>
+            <li role="presentation" class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    My Zone
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>1</li>
+                </ul>
+            </li>
+        </ul>
+        <br><br>
+        <!-- 胶囊式导航标签 -->
+        <!-- 两端平铺对齐标签 -->
+        <ul class="nav nav-pills nav-justified">
+            <li role="presentation" id="ul1"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Community</a></li>
+            <!-- class="disabled"样式禁用超链接，实际无效，中看不中用 -->
+            <li role="presentation" class="disabled"><a href="http://www.baidu.com">My Zone</a></li>
+            <li role="presentation"><a href="#">Central</a></li>
+        </ul>
+        <br><br>
+        <!-- 垂直堆叠导航条 -->
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation"><a href="#">Home</a></li>
+            <li role="presentation" class="active"><a href="#">Community</a></li>
+            <li role="presentation"><a href="#">My Zone</a></li>
+            <li role="presentation"><a href="#">Central</a></li>
+        </ul>
+        <br><br><br><br>
+
+        <!-- 导航条 -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- header部分展示logo -->
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
+        
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        
+        
+        <p style="color: #ff6600">123</p>
+        <!-- 徽章 -->
+        <a href="#">Inbox <span class="badge">42</span></a>
+        <!-- 徽章 -->
+        <button class="btn btn-primary" type="button">
+            成就 
+            <span class="badge">6</span>
+        </button>
+
+        <!-- 巨幕 -->
+        <div class="jumbotron">
+            <h1>Hello, world!</h1>
+            <p>My name is van, I'm a artist......The Deep Dark Fantasy.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+
+        <!-- 警告框 -->
+        <!-- 
+        <div class="alert alert-success" role="alert">...</div>
+        <div class="alert alert-info" role="alert">...</div>
+        <div class="alert alert-warning" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Warning!</strong> Better check yourself, you're not looking too good.
+        </div>
+        --> 
+        <div class="alert alert-danger hide" role="alert" >
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Warning!</strong> Better check yourself, you're not looking too good.
+        </div>
+
+        <br><br>
+        手机：<input type="text" id="phone" name="phone"><br>
+        验证码：<input type="text" id="vldtCode" name="vldtCode">
+
+        <!-- 模态框 /面界-->
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- 正式内容 -->
+                    <!-- header -->
+                    <div class="modal-header">
+                        <h3>Buy?</h3>
+                    </div>
+                    <!-- body -->
+                    <div class="modal-body">
+                        <form action="">
+                            <input type="text" name="un">
+                        </form>
+                    </div>
+                    <!-- footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <button data-toggle="modal" data-target="#myModal">Modal</button>
+        <button id="launch">显示模态框</button>
+        <br><br>
+        <span class="glyphicon glyphicon-envelope"></span>
+        <button class="btn btn-default btn-group-lg">
+            <span class="glyphicon glyphicon-envelope"></span>
+             Email
+        </button>
+<p>-----------------------------------------------------------------------------</p>
+        <button class="btn btn-default"><i class="fa fa-envelope"></i></button>
+        <br><br>
+        <form>
+            <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                <input type="text" class="form-control" ">
+            </div>
+        </form>
+        <form class=" form-inline">
+            <div class="form-group has-success has-feedback">
+                <label class="control-label" for="inputGroupSuccess3">Input group with success</label>
+                <div class="input-group">
+                    <span class="input-group-addon">@</span>
+                    <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status">
+                </div>
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
+            </div>
+        </form>
+        
+        
+        <br><br>
+    </div><!-- container -->
+
+    
+    
+</body>
+<script>
+    $(document).ready(function () {
+        $("#ul1").addClass("active");
+
+        $("#phone").blur(function () { 
+            if($(this).val().length == 3){
+                $(".alert-danger").removeClass("hide").text("史上最强手机号！(点击关闭)");
+            }
+        });
+
+        $(".alert-danger").click(function () { 
+            $(this).addClass("hide");
+        });
+
+        $("#launch").click(function (e) { 
+            e.preventDefault();
+            $("#myModal").modal();
+        });
+    });
+
+</script>
+</html>

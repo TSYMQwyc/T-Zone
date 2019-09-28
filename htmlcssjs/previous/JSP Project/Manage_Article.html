@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/RecentUpdate.css">
+    <link rel="stylesheet" type="text/css" href="./css/MainFrame.css">
+    <link rel="stylesheet" type="text/css" href="./css/HeadIcon.css">
+    <link rel="stylesheet" type="text/css" href="./css/Search.css">
+    <title>博文管理</title>
+</head>
+<body>
+<div class="bodydiv">
+    <div class="web_head">
+        <p>i S H A R E</p>
+        <div style="float: right; margin: 10px 5% 0 0">
+            <form>
+                <input type="text" name="search" placeholder="搜索...">
+                <input type="submit" value="搜索">
+            </form>
+        </div>
+
+    </div>
+
+    <ul class="topmenu">
+        <li><a href="Main.html">主页</a></li>
+        <li><a href="RecentUpdate.html">最近更新</a></li>
+        <li><a href="classify.html">分类</a></li>
+        <a class="uid" href="Main.html">糖送圆茗亲</a>
+        <div class="head_img">
+            <img src="./image/head.jpg" alt="head" width="50" height="50" style="border-radius: 50%; display: inline-block;">
+        </div>
+    </ul>
+
+    <div class="clearfix">
+        <div class="column sidemenu">
+            <ul>
+                <li><a href="Main.html">个人信息</a></li>
+                <li><a href="Publish.html">发表文章</a></li>
+                <li><a href="Manage_Article.html">博文管理</a></li>
+                <li><a>当前用户：管理员</a></li>
+            </ul>
+        </div>
+
+            <div class="column content">
+                <div class="list">
+                <table class="bk_list" >
+
+                    <!--<%
+                        while(result.next()){
+                    %>
+                         -->
+                    <tr>
+                        <th>
+                            <a href="Article_Detail.html"><!-- <%=result.getString("bw_title") %>-->Servlet简介</a>
+                            <div class="u_d">
+                                <form action="d_res" method="get">|
+                                    <!-- <input type="hidden" name="bw_id" value="<%=result.getString("bw_id")%>">  -->
+                                    <input type="hidden" name="bw_id" value="">
+                                    <input type="submit" value="删除">
+                                </form>
+                            </div>
+                            <div class="u_d">
+                                <form action="update.html" method="get">
+                                    <!-- <input type="hidden" name="bw_id" value="<%=result.getString("bw_id")%>">  -->
+                                    <input type="hidden" name="bw_id" value="bw_id">
+                                    <input type="submit" value="修改">&nbsp;
+                                </form>
+                            </div>
+
+                        </th>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <p style="display: inline-block; width: 900px">发表时间：2019-5-28<!-- <%=result.getString("bw_date") %>-->
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                分类：编程<!-- <%=result.getString("bk_classify") %> --></p>
+                        </td>
+                    </tr>
+<!--  <%  }    %> -->
+
+                </table>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <p>Team：WYC QQ ZX</p>
+            <p>Copyright © 2019 iShare. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

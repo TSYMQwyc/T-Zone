@@ -1,0 +1,65 @@
+body
+{
+    background: rgb(238, 238, 238) url('../PIC/pp1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+*
+{
+    box-sizing: border-box;
+}
+input[type=text], select, textarea
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(142, 139, 145);
+    border-radius: 5px;
+    resize: vertical;
+    outline: none;
+}
+
+label 
+{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input[type=submit]
+{
+    background-color: rgb(225, 208, 248);
+    color: black;
+    padding: 12px 20px;
+    border: 1px solid rgb(142, 139, 145);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+.formbox
+{
+    border: 1px solid rgba(193, 218, 216, 0.836);
+    background-color: rgba(220, 220, 220, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+    overflow: auto;
+}
+.row:after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+.col_label
+{
+    width: 25%;
+    float: left;
+    margin-top: 10px;
+    font-size:20px;
+}
+.col_form
+{
+    width: 75%;
+    float: left;
+    margin-top: 10px;
+    font-size:20px;
+}

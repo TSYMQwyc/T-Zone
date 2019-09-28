@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="../Javascript/jQ/jquery.color-2.1.2.js"></script>
+    <script src="../Javascript/jQ/jquery.gradientify.js"></script>
+    <link rel="stylesheet" href="./test.css">
+    <title>shadow</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            /* background: black; */
+        }
+        /* .shadowbox{
+            margin: 0px auto;
+            width: 40px;
+            height: 190px;
+            border-radius: 20px;
+            padding: 4px;
+            border: 1px solid #fff;
+        } */
+        .neon{
+            width: 90px;
+            height: 540px;
+            margin: 100px auto;
+            border-radius: 45px;
+        }
+        .glow{
+            animation: GLOW 2s ease infinite alternate;
+        }
+
+        @keyframes GLOW{
+            from{
+                box-shadow: 0px 0px 4px 2px #000000,
+                                    0px 0px 20px 10px rgb(43, 43, 43),
+                                    0px 0px 20px 10px rgb(75, 75, 75),
+                                    0px 0px 30px 20px rgb(114, 114, 114),
+                                    0px 0px 50px 30px rgb(145, 145, 145);
+            }
+            to{
+                box-shadow: 0px 0px 8px 4px #ffffff,
+                                    0px 0px 30px 20px rgb(255, 49, 49),
+                                    0px 0px 40px 25px rgb(255, 85, 85),
+                                    0px 0px 60px 30px rgb(255, 159, 159);
+            }
+        }
+    </style>
+</head>
+<body>
+
+        <div class="neon glow" id="n5"></div>
+
+</body>
+<script>
+$(document).ready(function () {
+
+    // $("#n5").gradientify({
+    //     gradients: [
+    //         { start: [255, 0, 0], stop: [255, 248, 0] },
+    //         { start: [255, 248, 0], stop: [5, 255, 0] },
+    //         { start: [5, 255, 0], stop: [0, 255, 251] },
+    //         { start: [0, 255, 251], stop: [0, 3, 255] },
+    //         { start: [0, 3, 255], stop: [253, 0, 255] },
+    //         { start: [0, 3, 255], stop: [255, 0, 0] }
+
+    //     ],
+    //     transition_time: 2
+    // });
+
+
+    /*
+    $("#box").gradientify({
+        gradients: [
+            { start: [255, 0, 0], stop: [255, 248, 0] },
+            { start: [255, 248, 0], stop: [5, 255, 0] },
+            { start: [5, 255, 0], stop: [0, 255, 251] },
+            { start: [0, 255, 251], stop: [0, 3, 255] },
+            { start: [0, 3, 255], stop: [253, 0, 255] },
+            { start: [0, 3, 255], stop: [255, 0, 0] }
+
+        ],
+        transition_time: 0.2
+    });
+    */
+});
+</script>
+</html>

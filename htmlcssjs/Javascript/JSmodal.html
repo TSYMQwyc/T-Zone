@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100%;
+            height: 3000px;/*假设页面高度为3000px*/
+        }
+        #mask {
+            width: 100%;
+            height: 100%;
+            position: fixed;/*利用固定定位的好处：页面还可以上下翻动，但是始终处于灰色背景下*/
+            background: rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+        #login {
+            width: 400px;
+            height: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -125px;
+            margin-left: -200px;
+            background-color: white;
+            display: none;
+        }
+        #login_close {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0px;
+            right: -30px;
+            font-size: 50px;
+            line-height: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="mask"></div>
+    <div id="login">
+        <span id="login_close">&times;</span>
+    </div>
+    <a href="javascript:void(0);" id="btn">点击模态框</a>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var oBtn = document.getElementById('btn');
+            var oMask = document.getElementById('mask');
+            var oLogin = document.getElementById('login');
+
+            oBtn.onclick = function () {
+                oMask.style.display = 'block';
+                oLogin.style.display = 'block';
+            }
+
+            var oLogin_close = document.getElementById('login_close');
+
+            oLogin_close.onclick = function () {
+                oMask.style.display = 'none';
+                oLogin.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>

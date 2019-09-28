@@ -1,0 +1,89 @@
+.singleTransition{
+    width: 100px;
+    height: 100px;
+    background: rgb(11, 204, 230);
+    transition: width 2s;
+}
+.singleTransition:hover{
+    width: 300px;
+}
+
+.multiTransition{
+    width: 100px;
+    height: 100px;
+    margin: 50px 0px 0px 300px;
+    background: rgb(235, 143, 143);
+    transition: width 3s, height 2s, transform 1s;
+    
+    /* transition: all 2s; */       /*所有过渡时间设为2s*/
+    /* transition-delay: 2s; */     /*过渡延迟时间 2s*/
+}
+.multiTransition:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+input[type=submit]{
+    margin-left: 30px;
+    width: 120px;
+    height: 40px;
+    background: #D1EEEE;
+    border: 2px solid rgb(120, 231, 231);
+    border-radius: 10px;
+    transition: width 1s, height 1s, background 1s;
+    outline: none;
+}
+input[type=submit]:hover{
+    width: 150px;
+    height: 50px;
+    background: rgb(0, 255, 255); 
+}
+
+/*动画效果*/
+.animation1{
+    width: 120px;
+    height: 30px;
+    position: relative;
+    background-color: rgba(36, 199, 58, 0.7);
+    text-align: center;
+    animation: ww 4s linear 1s infinite normal;
+            /* name  duration function delay count direction*/
+    /* 
+    animation-name: ww;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    动画播放次数 infinite永久播放
+    animation-iteration-count: infinite; 
+    播放方式 正常 逆向 normal常规
+    animation-direction: normal;  
+    */
+}
+@keyframes ww{
+    0% {background: rgba(36, 199, 58, 0.7); left: 0px; top: 0px;}
+    25% {background: rgba(36, 93, 199, 0.7); left: 300px; top: 0px;}
+    50% {background: rgba(199, 36, 150, 0.7); left: 300px; top: 300px;}
+    75% {background: rgba(199, 196, 36, 0.7); left: 0px; top: 300px;}
+    100% {background: rgba(36, 199, 58, 0.7); left: 0px; top: 0px;}
+}
+.animation2{
+    margin: 300px 0 0 300px; 
+    width: 120px;
+    height: 30px;
+    position: relative;
+    background-color: rgba(93, 36, 199, 0.7);
+    text-align: center;
+    animation: mxd 4s linear 1s infinite normal;
+}
+@keyframes mxd{
+    0% {background: rgba(93, 36, 199, 0.7); left: 0px; top: 0px;}
+    25% {background: rgba(36, 199, 90, 0.7); left: -300px; top: 0px;}
+    50% {background: rgba(199, 36, 36, 0.7); left: -300px; top: -300px;}
+    75% {background: rgba(199, 36, 145, 0.7); left: 0px; top: -300px;}
+    100% {background: rgba(93, 36, 199, 0.7); left: 0px; top: 0px;}
+}
+
+.Transition{
+    transition: transform 4s;       /* 过渡：变形 4秒 */
+}

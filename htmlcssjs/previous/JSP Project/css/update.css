@@ -1,0 +1,18 @@
+.details label
+{
+    color: #343434;
+    font-weight: bold;
+    font-size: 18px;
+}
+.comment_del
+{
+    margin-left: 95%;
+    border: none;
+    background: white;
+    outline: none;
+    color: blue;
+}
+/*p>input[type=submit]:hover*/
+/*{*/
+    /*color: red;*/
+/*}*/

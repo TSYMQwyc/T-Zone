@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/MainFrame.css">
+    <link rel="stylesheet" type="text/css" href="./css/HeadIcon.css">
+    <link rel="stylesheet" type="text/css" href="./css/Search.css">
+
+    <title>文章详细</title>
+    <link rel="stylesheet" href="css/Details.css">
+</head>
+<body>
+<div class="bodydiv">
+    <div class="web_head">
+        <p>i S H A R E</p>
+        <div style="float: right; margin: 10px 5% 0 0">
+            <form>
+                <input type="text" name="search" placeholder="搜索...">
+                <input type="submit" value="搜索">
+            </form>
+        </div>
+
+    </div>
+
+    <ul class="topmenu">
+        <li><a href="Main.html">主页</a></li>
+        <li><a href="RecentUpdate.html">最近更新</a></li>
+        <li><a href="classify.html">分类</a></li>
+
+        <!--添加session验证
+        <%
+        未完成
+        %>
+        -->
+        <a class="uid" href="Main.html">糖送圆茗亲</a>
+        <div class="head_img">
+            <img src="./image/head.jpg" alt="head" width="50" height="50" style="border-radius: 50%; display: inline-block;">
+        </div>
+    </ul>
+
+    <div class="clearfix">
+        <div class="column sidemenu">
+            <ul>
+
+                <!--添加session验证
+        <%
+        未完成
+        %>
+
+        管理员菜单：
+        <li><a href="Main.html">个人信息</a></li>
+                        <li><a href="Publish.html">发表文章</a></li>
+                        <li><a href="Manage_Article.html">博文管理</a></li>
+                        <li><a>当前用户：管理员</a></li>
+        -->
+                <li><a href="Tourist.html">个人信息</a></li>
+                <li><a>当前用户：游客</a></li>
+
+            </ul>
+        </div>
+
+        <div class="column content">
+
+            <div class="details">
+
+                <h2>博文标题</h2>
+                <p class="bw_cont">博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容
+                    博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容</p>
+                <p class="bw_cont">博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容
+                    博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容</p>
+                <p class="bw_cont">博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容
+                    博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容</p>
+                <p class="bw_cont">博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容
+                    博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容</p>
+                <p class="bw_cont">博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容
+                    博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容</p>
+            </div>
+<br>
+            <div class="details">
+                <p><label>昵称糖送圆茗亲：</label>
+                这文章真不错，完美地解决了我的问题，赞一个！</p>
+                <p><label>昵称糖送圆茗亲：</label>
+                为什么我的不行呢？</p>
+                <p><label>昵称糖送圆茗亲：</label>
+                我只想知道楼主帅不帅 ^_^</p>
+            </div>
+<br>
+            <div class="details">
+                <p style="color: red; font-weight: bold; font-size: 18px">你也赶紧来一发评论吧！</p>
+
+                <form action="Article_Detail.html" method="post">
+                    <p><label>昵称：</label><input class="id" type="text" name="id" placeholder="请您为自己设一个昵称，长度不要超过10个字"></p>
+                    <p><label style="vertical-align: top">评论：</label><textarea class="comment_cont" wrap="soft" name="comment" placeholder="请输入评论内容"></textarea></p>
+                    <p style="text-align: right"><input type="submit" value="发表"></p>
+                </form>
+            </div>
+            <!-- 表单数据字段名： 昵称：id    评论：comment -->
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>Team：WYC QQ ZX</p>
+        <p>Copyright © 2019 iShare. All Rights Reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>

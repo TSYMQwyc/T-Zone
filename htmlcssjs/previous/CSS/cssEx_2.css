@@ -1,0 +1,110 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 15px;
+}
+.bodydiv
+{
+    width: 80%;
+    margin: 0 auto;
+}
+/*顶部导航栏*/
+.topmenu
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #777;
+}
+.topmenu li
+{
+    float: left;
+}
+.topmenu li a
+{
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+.topmenu li a:hover
+{
+    background-color: #c1c1c1;
+}
+.topmenu li a:active
+{
+    color: cyan;
+    background-color: #444;
+}
+
+.column
+{
+    float: left;
+    padding:15px;
+}
+.clearfix::after
+{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+/*左侧菜单栏*/
+.sidemenu
+{
+    width: 25%;
+}
+.sidemenu ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sidemenu ul a
+{
+    margin-bottom: 5px;
+    display: block;
+    padding: 8px;
+    background-color: #ddd;
+    text-decoration: none;
+    color:#666;
+}
+.sidemenu li a:hover
+{
+    background-color: #555;
+    color:white;
+}
+.sidemenu li a:active
+{
+    background-color: #008cba;
+    color: white;
+}
+
+/*右侧内容*/
+.header
+{
+    background-color: #BFEFFF;
+    color:#ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+.content
+{
+    width: 75%;
+}
+
+/*底部*/
+.footer
+{
+    background-color: #777;
+    color:#ffffff;
+    padding: 15px;
+}

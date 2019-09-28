@@ -1,0 +1,25 @@
+.logo {
+    width: 90px;
+    height: 30px;
+    margin-top: -5px
+}
+
+.banner {
+    height: 550px;
+    text-align: center;
+    padding-top: 150px;
+    background-image: url("./img/banner-bg.jpg");
+    background-size: cover;
+    color:#ffffff;
+}
+
+#product-info {
+    padding-top: 30px;
+}
+.foot div{
+    text-align: center;
+    background: rgb(248, 248, 248);
+    font-size: 18px;
+    line-height: 18px
+}
+body { padding-top: 50px; }

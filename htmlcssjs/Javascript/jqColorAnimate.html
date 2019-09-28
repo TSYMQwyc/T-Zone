@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jquery color animate</title>
+    <style>
+        div {
+            background-color: #bada55;
+            width: 100px;
+            border: 1px solid green;
+        }
+    </style>
+    <script src="./jQ/jquery-3.3.1.min.js"></script>
+    <script src="./jQ/jquery.color-2.1.2.js"></script>
+</head>
+
+<body>
+    <button id="go">Simple</button>
+    <button id="sat">Desaturate</button>
+    <div id="block">Hello!</div>
+    <script>
+        $(document).ready(function () {
+            
+             jQuery("#go").click(function () {
+                jQuery("#block").animate({
+                    backgroundColor: "#abcdef"
+                }, 1500);
+            });
+            jQuery("#sat").click(function () {
+                jQuery("#block").animate({
+                    backgroundColor: jQuery.Color({ saturation: 10 })
+                }, 1500);
+            });
+        });
+       
+    </script>
+</body>
+
+</html>

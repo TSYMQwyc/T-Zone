@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="cssEx_11.css">
+    <title>表单样式</title>
+</head>
+
+<body>
+
+    <div class="formbox">
+        <form action="">
+            <fieldset style="border:none;">
+                <legend style="text-align:center; font-size: 25px;">Registration</legend>
+
+
+                <div class="row">
+                    <div class="col_label">
+                        <label for="name">Name: </label>
+                    </div>
+                    <div class="col_form">
+                        <input type="text" name="name" placeholder="Your Name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col_label">
+                        <label for="age">Age: </label>
+                    </div>
+                    <div class="col_form">
+                        <input type="text" name="age" placeholder="Your age">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col_label">
+                        <label for="sex">Sex:</label>
+                    </div>
+                    <div class="col_form">
+                        <input type="radio" name="sex" value="Male">Male
+                        <input type="radio" name="sex" value="Female">Famale
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col_label">
+                        <label for="hobby">Hobby:</label>
+                    </div>
+                    <div class="col_form">
+                        <input type="checkbox" name="hobby" value="music">Music
+                        <input type="checkbox" name="hobby" value="music">Sports
+                        <input type="checkbox" name="hobby" value="music">Programming
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col_label">
+                        <label for="country">Country: </label>
+                    </div>
+                    <div class="col_form">
+                        <select name="country" id="country">
+                            <option value="China">China</option>
+                            <option value="USA">USA</option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col_label">
+                        <label for="subject">Subject:</label>
+                    </div>
+                    <div class="col_form">
+                        <textarea name="subject" id="subject" placeholder="Write something..."
+                            style="height:100px; "></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col_label"></div>
+                    <div class="col_form">
+                        <input type="submit" value="Regist">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

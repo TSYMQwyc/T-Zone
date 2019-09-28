@@ -1,0 +1,86 @@
+/*设置父元素样式*/
+.pa
+{
+    display: inline-block;
+    position: relative;
+    background-color:chartreuse;
+    border-radius: 20px;
+}
+.pa:hover
+{
+    background-color: rgb(0, 255, 13);
+}
+/*父元素下所有<a>标签*/
+.pa a
+{
+    text-decoration: none;
+    color: #1f1e1e; 
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+}
+/*子元素 菜单主体*/
+.son
+{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+/*子元素中所有<a>标签*/
+.son a
+{
+    background-color: chartreuse;
+    display: block;
+    box-shadow: 0px 10px 20px 0px rgb(0, 0, 0, 0.3);
+}
+.son a:hover
+{
+    background-color: rgb(0, 255, 13);
+}
+/*当鼠标移到父元素上时显示子元素--菜单主体*/
+.pa:hover .son
+{
+    display: block;
+}
+
+/*下拉图片*/
+.smallimg
+{
+    position: relative;
+    display: inline-block;
+}
+.bigimg
+{
+    position: absolute;
+    display: none;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.4);
+}
+.smallimg:hover .bigimg
+{
+    display: block;
+}
+
+/*提示框*/
+/*基础控件*/
+.tip
+{
+    position: relative;
+    display: inline-block;
+
+}
+.tiptool
+{
+    position: absolute;
+    transform: translate(50%, -50%);
+    visibility: hidden;
+    width: 85px;
+    padding: 5px 8px;
+    background-color: rgba(240, 255, 255, 0.788);
+    text-align: center;
+    border: 1px solid #303030;
+    border-radius: 15px;
+}
+.tip:hover .tiptool
+{
+    visibility: visible;
+}

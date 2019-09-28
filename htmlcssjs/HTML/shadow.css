@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+}
+body{
+    background: #000;
+}
+
+/* 发光文字 */
+h1.ani{
+    color: #ff0000;
+    font-family: '时尚中黑简体';
+    animation: GLOW 2s ease infinite alternate;
+    text-align: center;
+}
+@keyframes GLOW{
+    from {
+        text-shadow: 0 0 10px #d40000,
+                    0 0 20px  #ff0000,
+                    0 0 30px  #ff1010,
+                    0 0 40px #ff3f3f,
+                    0 0 70px #ff0e0e,
+                    0 0 80px #fff,
+                    0 0 100px #fff,
+                    0 0 150px #fff
+                    ;  
+    }
+    to {
+        text-shadow: 0 0 5px #fff,
+                    0 0 10px #fff,
+                    0 0 15px #fff,
+                    0 0 40px #ff3f3f,
+                    0 0 70px #ff0e0e,
+                    0 0 80px #ff1010,
+                    0 0 100px #ff0000,
+                    0 0 150px #d40000
+                    ; 
+    }
+}
+
+/* 头像边框效果 */
+.outShadow{
+    width: 190px;
+    height: 190px;
+    background: #1df52f;            /*41f750*/
+    border-radius: 8px;
+    /* box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.4); */
+    /*
+    box-shadow: 0px 0px 5px 5px #5bfdbf,           /*shadow args:  X-offset Y-offset blurPX shadowWIDTH
+    0px 0px 10px 15px #fd9c9c,                              /*第n组参数与第一组一致，不过距离依然从元素的border开始计算
+    0px 0px 20px 20px #ffffff;
+    */
+}
+.inShadow{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 8px;
+    
+    /* box-shadow: inset 0px 0px 5px 10px rgba(255, 255, 255, 0.5),
+    0px 0px 10px 20px yellow; */
+}
+
+.jianbian{
+    background: linear-gradient(30deg, red, blue, yellow, lightblue);
+    animation: back 0.5s ease infinite normal;
+}
+
+@keyframes back{
+    0%  {background: linear-gradient(0deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    5%  {background: linear-gradient(18deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    10%{background: linear-gradient(36deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    15% {background: linear-gradient(54deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    20%{background: linear-gradient(72deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    25% {background: linear-gradient(90deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    30%{background: linear-gradient(108deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    3% {background: linear-gradient(126deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    40%{background: linear-gradient(144deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    45% {background: linear-gradient(162deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    50%{background: linear-gradient(180deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    55% {background: linear-gradient(198deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    60%{background: linear-gradient(216deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    65% {background: linear-gradient(234deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    70%{background: linear-gradient(252deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    75% {background: linear-gradient(270deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    80%{background: linear-gradient(288deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    85% {background: linear-gradient(306deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    90%{background: linear-gradient(324deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    95% {background: linear-gradient(342deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+    100%{background: linear-gradient(360deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue);}
+}
+
+.neonbox{
+    width: 262px;
+    margin: 10px auto;
+    color: white;
+    height: 220px;
+    padding: 20px 0px 20px 15px;
+}
+.neon{
+    width: 30px;
+    height: 180px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+   
+.td{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#d3{
+    border-radius: 10px;
+    width: 280px;
+    height: 280px;
+}
+
+.td0{
+    background: linear-gradient(0deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td1{
+    background: linear-gradient(9deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+    .td2{
+    background: linear-gradient(18deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td3{
+    background: linear-gradient(27deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+    .td4{
+    background: linear-gradient(36deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td5{
+    background: linear-gradient(45deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td6{
+    background: linear-gradient(54deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td7{
+    background: linear-gradient(63deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+    .td8{
+    background: linear-gradient(72deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td9{
+    background: linear-gradient(81deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+    .td10{
+    background: linear-gradient(90deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td11{
+    background: linear-gradient(99deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td12{
+    background: linear-gradient(108deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td13{
+    background: linear-gradient(117deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+    .td14{
+    background: linear-gradient(126deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td15{
+    background: linear-gradient(135deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+    .td16{
+    background: linear-gradient(144deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td17{
+    background: linear-gradient(153deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td18{
+    background: linear-gradient(162deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td19{
+    background: linear-gradient(171deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+    .td20{
+    background: linear-gradient(180deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td21{
+    background: linear-gradient(189deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+    .td22{
+    background: linear-gradient(198deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td23{
+    background: linear-gradient(207deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td24{
+    background: linear-gradient(216deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td25{
+    background: linear-gradient(225deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+    .td26{
+    background: linear-gradient(234deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td27{
+    background: linear-gradient(243deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+    .td28{
+    background: linear-gradient(252deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td29{
+    background: linear-gradient(261deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td30{
+    background: linear-gradient(270deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td31{
+    background: linear-gradient(279deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+    .td32{
+    background: linear-gradient(288deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td33{
+    background: linear-gradient(297deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+    .td34{
+    background: linear-gradient(306deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td35{
+    background: linear-gradient(315deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td36{
+    background: linear-gradient(324deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td37{
+    background: linear-gradient(333deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+    .td38{
+    background: linear-gradient(342deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+.td39{
+    background: linear-gradient(351deg, red, rgb(255, 0, 234), blue, white, yellow, rgb(255, 60, 0), lightblue); 
+}
+        

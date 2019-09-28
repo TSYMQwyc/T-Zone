@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/MainFrame.css">
+    <link rel="stylesheet" type="text/css" href="./css/HeadIcon.css">
+    <link rel="stylesheet" type="text/css" href="./css/Search.css">
+    <title>博文修改模式</title>
+    <link rel="stylesheet" href="css/Publish.css">
+    <link rel="stylesheet" href="css/update.css">
+
+
+</head>
+<body>
+<div class="bodydiv">
+    <div class="web_head">
+        <p>i S H A R E</p>
+        <div style="float: right; margin: 10px 5% 0 0">
+            <form>
+                <input type="text" name="search" placeholder="搜索...">
+                <input type="submit" value="搜索">
+            </form>
+        </div>
+
+    </div>
+
+    <ul class="topmenu">
+        <li><a href="Main.html">主页</a></li>
+        <li><a href="RecentUpdate.html">最近更新</a></li>
+        <li><a href="classify.html">分类</a></li>
+        <a class="uid" href="Main.html">糖送圆茗亲</a>
+        <div class="head_img">
+            <img src="./image/head.jpg" alt="head" width="50" height="50" style="border-radius: 50%; display: inline-block;">
+        </div>
+    </ul>
+
+    <div class="clearfix">
+        <div class="column sidemenu">
+            <ul>
+                <li><a href="Main.html">个人信息</a></li>
+                <li><a href="Publish.html">发表文章</a></li>
+                <li><a href="Manage_Article.html">博文管理</a></li>
+                <li><a>当前用户：管理员</a></li>
+            </ul>
+        </div>
+
+        <div class="column content">
+            <h2 style="text-align: center">修改文章</h2>
+            <div class="publish" style="border: 1px dotted #e1e1e1;">
+                <form action="Result.html" method="post">
+                    <input type="hidden" value="">          <!--<% =result.getString("classify") %>--> <!--不能修改博文分类-->
+                    <table class="publish_table" width="100%" >
+                        <tr>
+                            <td class="lab"><label>标题：</label></td>
+                            <td><input type="text" name="title" value="Servlet简介"></td>
+                        </tr>
+
+                        <tr>
+                            <td style="vertical-align: top;" class="lab"><label>正文：</label></td>
+                            <td style="width: auto"><textarea name="content" wrap="soft" >博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容博文内容</textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center"><input type="submit" value="提交修改"></td>
+                        </tr>
+                    </table>
+
+                </form>
+                <!-- 表单数据字段名：标题：title    分类：classify    正文：content-->
+
+            </div>
+            <br>
+
+            <div class="details" style="padding: 8px; border: 1px dotted #e3e3e3;">
+                <h2 style="text-align: center">评论管理</h2>
+                <p><label>昵称糖送圆茗亲：</label>
+                    这文章真不错，完美地解决了我的问题，赞一个！
+                    <form action="/deleteServlet" method="get">
+                        <input type="hidden" value="  "> <!-- =result.getSting("bw_id") -->
+                        <input class="comment_del" type="submit" value="删除">
+                    </form>
+                </p>
+
+                <p><label>昵称糖送圆茗亲：</label>
+                    为什么我的不行呢？
+                <form action="/deleteServlet" method="get">
+                    <input type="hidden" value="  "> <!-- =result.getSting("bw_id") -->
+                    <input class="comment_del" type="submit" value="删除">
+                </form>
+                </p>
+
+                <p><label>昵称糖送圆茗亲：</label>
+                    我只想知道楼主帅不帅 ^_^
+                <form action="/deleteServlet" method="get">
+                    <input type="hidden" value="  "> <!-- =result.getSting("bw_id") -->
+                    <input class="comment_del" type="submit" value="删除">
+                </form>
+                </p>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>Team：WYC QQ ZX</p>
+        <p>Copyright © 2019 iShare. All Rights Reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>

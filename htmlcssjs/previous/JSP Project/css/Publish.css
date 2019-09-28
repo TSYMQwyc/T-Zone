@@ -1,0 +1,77 @@
+.publish
+{
+    height: 100%;
+    width: 100%;
+}
+.publish_table
+{
+    border-collapse: separate;
+    border-spacing: 5px 15px;
+}
+.publish_table label
+{
+    color: #343434;
+    font-weight: bold;
+    font-size: 18px;
+}
+.publish td
+{
+    padding: 5px;
+    font-size: 18px;
+}
+td.lab
+{
+    width: 6%;
+}
+input[type=text]
+{
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #ff6600;
+    border-radius: 8px;
+    outline: none;
+}
+textarea
+{
+    font-size: 15px;
+    border: 1px solid #ff6600;
+    border-radius: 8px;
+    outline: none;
+    resize: vertical;
+    width: 100%;
+    height: 35em;
+}
+input[type=text]:focus
+{
+    background: #fff1d9;
+}
+textarea:focus
+{
+    background: #fff1d9;
+}
+td input[type=submit]
+{
+    width: 7em;
+    height: 2.5em;
+    background: white;
+    border: 1px solid #ff6600;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+input[type=submit]:hover
+{
+    background: #fff1d9;
+}
+select
+{
+
+    border: 1px solid #ff6600;
+    border-radius: 8px;
+    font-size: 15px;
+    height: 40px;
+    outline: none;
+    width: 100%;
+    padding: 3px;
+}

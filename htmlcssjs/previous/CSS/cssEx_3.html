@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="cssEx_3.css">
+        <title>几种对齐方式</title>
+    </head>
+
+    <body>
+        <p>通过float: left; 和 float: right; 使元素靠左或靠右</p>
+        <p><b>只有一个元素时可使用，多个不行，要使用其他方法</b></p>
+        <div class="left">
+            <p><b>float: left; </b>I just wanna run, hide it away...</p>
+        </div>
+        <div class="right">
+                <p><b>float: right; </b>I just wanna run, throw it away...</p>
+        </div>
+        <br/><br/><br/>
+
+        <p>居中方式之一：通过padding设置元素在父元素中垂直居中</p>
+        
+        <div class="paddingcenter">
+            <p><b>padding: 60px 0; </b>站在垂直的中心</p>
+        </div>
+        <br/>
+        
+        <p>居中方式之二：父：text-align 子：margin</p>
+        <div class="cdiv">
+            <p style="position:absolute; left:10px; top:450px;">div: text-align: center; height: 300px;</p>
+            <p class="center"><b>margin: 150px auto; </b>站在世界的中心</p>
+        </div>
+        <br/>
+
+        <p>用position和transform实现居中</p>
+        <div class="adiv">
+            <p style="margin:0;">div: position:relative; </p>
+            <p style="margin:0;"><b>p: position:absolute; transform:translate(-50%,-50%) </b></p>
+            <p class="pc">还是站在世界的中心 *^A^*</p>
+        </div>
+
+    </body>
+</html>

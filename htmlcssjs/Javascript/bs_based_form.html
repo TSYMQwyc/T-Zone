@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./jQ/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../bootstrap-3.3.7/dist/css/bootstrap.css">
+	<title>Document</title>
+	<style>
+		input[type=password] {
+			font-size: 16px;
+			/* background-image: url('../icons/pswd.jpg'); */
+			background-position: 6px 6px;
+			background-repeat: no-repeat;
+			padding: 12px 20px 12px 40px;
+		}
+		input[type=text] {
+			font-size: 16px;
+			/* background-image: url('../icons/user.jpg'); */
+			background-position: 6px 5px;
+			background-repeat: no-repeat;
+			padding: 12px 20px 12px 40px;
+		}
+
+		/* 单选按钮 */
+		input[type=radio]{
+			opacity: 0;
+			display: inline-block;
+			position: relative;
+			left: 19px;
+		}
+		input[type=radio] + span{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background: url('../icons/unselected.png') no-repeat 0px 4px;
+			background-size: 90%;
+			
+		}
+		input[type=radio]:checked + span{
+			background: url('../icons/selected.png') no-repeat 0px 4px;
+			background-size: 90%;
+		}
+
+		/* 复选框 */
+		input[type=checkbox]{
+			opacity: 0;
+			display: inline-block;
+			position: relative;
+			left: 19px;
+		}
+		input[type=checkbox] + span{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background: url('../icons/uncheck.png') no-repeat 0px 4px;
+			background-size: 90%;
+		}
+		input[type=checkbox]:checked + span{
+			background: url('../icons/checked.png') no-repeat 0px 4px;
+			background-size: 90%;
+		}
+
+		.form-text{
+			position: relative; 
+		}
+		.form-text > span{
+			position: absolute;
+			font-size: 20px;
+			top: 6px;
+			left: 9px;
+			color: rgb(94, 94, 94);
+		}
+		.form-rc{
+			font-size: 16px;
+		}
+
+	</style>
+</head>
+<body>
+	<br><br>
+    <div class="container">
+		<div class="col-lg-6 col-lg-offset-3">
+
+			<!-- 结合bootstrap制作的表单输入框 -->
+			<form>
+				<div class="form-group">
+					<label for="username">Username</label>
+					<div class="form-text">
+						<span class="glyphicon glyphicon-user"></span>
+						<input type="text" class="form-control" placeholder="Username">
+					</div>
+					
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<div class="form-text">
+						<span class="glyphicon glyphicon-lock"></span>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					</div>
+				</div>
+
+				<!-- 自制单选按钮 -->
+				<div class="radio form-rc">
+					<label>
+						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"><span></span>
+						Select me 1
+					</label>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<label>
+						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><span></span>
+						Select me 2
+					</label>
+				</div>
+				<div class="radio">
+					
+				</div>
+				
+				<!-- 自制复选按钮 -->
+				<div class="checkbox form-rc">
+					<label>
+						<input type="checkbox"><span></span> Check me out 1
+					</label>
+					<label>
+						<input type="checkbox"><span></span> Check me out 2
+					</label>
+				</div>
+				
+				<!-- 提交按钮 -->
+				<div class="col-lg-2 col-lg-offset-5 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5 col-xs-12">
+					<button type="submit" class="btn btn-default ">Submit</button>
+				</div>
+				
+			</form>
+
+			
+		</div>
+		glyphicon glyphicon-check
+		glyphicon glyphicon-unchecked
+    </div>
+    
+</body>
+</html>

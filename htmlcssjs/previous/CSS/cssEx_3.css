@@ -1,0 +1,51 @@
+.left
+{
+    float: left;
+    width: 40%;
+    overflow: auto;
+    border: 1px solid #4ebe23;
+    clear: both;
+}
+.right
+{
+    float: right;
+    width: 40%;
+    overflow: auto;
+    border: 1px solid #4ebe23;
+}
+.paddingcenter
+{
+    padding: 60px 0;
+    border: 1px solid #1d38d8;
+}
+
+/*组合居中方式之二*/
+.cdiv
+{
+    height: 300px;
+    border: 2px solid #666;
+    text-align: center;
+}
+p.center
+{
+    margin: 150px auto;
+}
+
+/*组合居中方式之三*/
+.adiv
+{
+    height: 400px;
+    position: relative;                     /*父元素定位*/
+    border: 2px solid #8000ff;
+}
+.pc
+{
+    margin: 0;
+    position: absolute;                 /*子元素定位*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)        /*相对自身的尺寸变换*/
+}
+
+
+

@@ -1,0 +1,18 @@
+.web_head input[type=text] {
+    width: 400px;
+    border: 1px solid rgba(255, 134, 37, 0.29);
+    border-radius: 5px;
+    font-size: 16px;
+    background-image: url('../image/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    outline: none;
+}
+.web_head input[type=submit]{
+    background: white;
+    border: 1px solid rgba(255, 134, 37, 0.29);
+    border-radius: 5px;
+    width: 80px;
+    height: 43px;
+}

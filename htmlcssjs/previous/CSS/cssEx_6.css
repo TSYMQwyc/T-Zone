@@ -1,0 +1,65 @@
+body
+{
+    background-image: url('../PIC/bg2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0px 20%;
+    background-attachment: fixed;
+    width: 60%;
+}
+
+.tnav
+{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(139, 72, 38, 0.705);
+    margin: 0 auto;
+    padding: 0;
+}
+li
+{
+    float: left;
+}
+li a, .active
+{
+    display: inline-block;
+    color: beige;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 20px;
+}
+li a:hover, .dropdown:hover, .active
+{
+    background-color: #e9d167af;
+}
+
+.dropdown
+{
+    display: inline-block;
+    padding: 15px 0px;
+}
+
+.dropdownitem
+{
+    display: none;
+    position: absolute;
+    background-color: rgba(139, 72, 38, 0.705);
+    min-width: 160px;
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.dropdownitem a
+{
+    color: beige;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+.dropdownitem a:hover
+{
+    background-color: #e9d167af;
+}
+.dropdown:hover .dropdownitem
+{
+    display: block;
+}

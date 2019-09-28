@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/MainFrame.css">
+    <link rel="stylesheet" type="text/css" href="./css/HeadIcon.css">
+    <link rel="stylesheet" type="text/css" href="./css/Search.css">
+    <link rel="stylesheet" type="text/css" href="./css/RecentUpdate.css">
+    <title>博文分类</title>
+</head>
+<body>
+<div class="bodydiv">
+    <div class="web_head">
+        <p>i S H A R E</p>
+        <div style="float: right; margin: 10px 5% 0 0">
+            <form>
+                <input type="text" name="search" placeholder="搜索...">
+                <input type="submit" value="搜索">
+            </form>
+        </div>
+
+    </div>
+
+    <ul class="topmenu">
+        <li><a href="Main.html">主页</a></li>
+        <li><a href="RecentUpdate.html">最近更新</a></li>
+        <li><a href="classify.html">分类</a></li>
+
+        <!--添加session验证
+    <%
+    未完成
+    %>
+    -->
+        <a class="uid" href="Main.html">游客，请登录～</a>
+
+        <div class="head_img">
+            <img src="./image/head.jpg" alt="head" width="50" height="50" style="border-radius: 50%; display: inline-block;">
+        </div>
+    </ul>
+
+    <div class="clearfix">
+        <div class="column sidemenu">
+            <ul>
+                <!--添加session验证
+    <%
+    未完成
+    %>
+    -->
+
+                <li><a href="classify.html">计算机</a></li>
+                <li><a href="classify2.html">编程</a></li>
+                <li><a href="classify3.html">生活</a></li>
+            </ul>
+        </div>
+
+        <div class="column content">
+            <div class="list">
+                <table class="bk_list">
+
+                    <!--
+                    while(result.next()){
+                        out.println("<tr><th><<a href=\" " + url + \"">result.getString("bw_title") + "</a></th></tr>");
+                        out.println("<tr><td><p>发表时间：" + result.getString("bw_date") + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分类："+ result.getString("bk_classify")+"</p></td></tr>" );
+                     }
+                     -->
+                    <tr><th><a href="Article_Detail.html">硬盘发展史</a></th></tr>
+                    <tr><td><p style="display: inline-block; width: 900px">发表时间：2019-5-28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分类：计算机</p></td></tr>
+
+                </table>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <p>Team：WYC QQ ZX</p>
+        <p>Copyright © 2019 iShare. All Rights Reserved.</p>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+

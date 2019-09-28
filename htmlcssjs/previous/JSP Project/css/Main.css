@@ -1,0 +1,48 @@
+.big_image
+{
+    margin-top: 20px;
+    float: left;
+    border: 2px solid #e6e6e6;
+    width: 30%;
+    height: 450px;
+}
+
+.user_info
+{
+    float: left;
+    margin-top: 0px;
+    margin-left: 2%;
+    width: 65%;
+    overflow: auto;
+    padding: 0px;
+}
+.user_info hr
+{
+    border: 1px dotted #e6e6e6;
+    clear: both;
+}
+.user_info p
+{
+    float: left;
+    font-size: 20px;
+    color: #767676;
+}
+p.headline
+{
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+p.th
+{
+    text-align: left;
+    color: black;
+    width: 15%;
+}
+p.td
+{
+    margin-left: 3%;
+    text-align: left;
+    width: 80%;
+}

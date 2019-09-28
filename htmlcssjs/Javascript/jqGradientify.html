@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>jQuery Gradientify plugin - demo</title>
+    <meta name="description" content="jQuery Gradientify plugin provices CSS gradient transitions.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./jQ/jquery-3.3.1.min.js"></script>
+    <script src="./jQ/jquery.gradientify.js"></script>
+    <script src="../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-3.3.7/dist/css/bootstrap.min.css">
+
+    <style>
+        .div1{
+            height: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 8px;
+            margin-top: 25%;
+            position: relative;
+        }
+        .div2{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 1px solid rgb(255, 0, 0);
+            overflow: hidden;
+            border-radius: 50%; 
+            left: 0px;
+            right: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -200px;
+            display: none;
+        }
+        .dt{
+            height: 100px; 
+            width: 100px; 
+            border: 1px solid red; 
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div1">
+            <div class="div2">
+                <img src="../icons/arrow_right.png" alt="11">
+            </div>
+            content
+        </div>
+
+        <div class="dt" id="divtest"></div>
+    </div>
+    
+
+    <script>
+        $(document).ready(function () {
+            $("body").gradientify({
+                //gradients：必须有两组以上颜色作为参数
+                //同一时刻显示 start 到 stop 颜色的渐变
+                //动画内容为从上到下，start 到 start 的过渡，stop 到 stop的过渡
+                gradients: [
+                    { start: [255, 229, 196], stop: [25, 249, 216] },
+                    { start: [255, 255, 209], stop: [255, 168, 168] },
+                    { start: [255, 183, 255], stop: [178, 166, 255] },
+                    {start: [147, 248, 147], stop: [255, 229, 196]}
+                ],
+                fps: 60,
+                transition_time: 2
+            });
+
+            setTimeout(function () {
+                $(".div2").fadeIn(1000).animate({marginTop: '-100px'}, 1000);
+            }, 1000);
+            
+            $("#divtest").fadeIn(1000);
+            $(".dt").animate({marginLeft: '200px'}, 1000);
+
+        });
+    </script>
+</body>
+
+</html>

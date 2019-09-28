@@ -1,0 +1,80 @@
+body
+{
+    background-image: url('../PIC/g1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0px;
+    background-attachment: fixed;
+}
+
+
+.lnav
+{
+    list-style-type: none;
+    background-color: #f0f0f0a6;
+    overflow: auto;
+    height: 100%;
+    width: 19%;
+    position: fixed;
+    margin: 0 20%;
+    padding: 0;
+    border: 1px solid #c9c9c935;
+}
+.lnav li
+{
+    border-bottom: 1px solid #c9c9c95b;
+}
+.lnav li a
+{
+    display: block;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 20px;
+    color: #404040;
+}
+.lnav li a:hover
+{
+    background-color: #8080ff;
+    color: azure;
+}
+.lnav li a:active
+{
+    color: bisque;
+}
+.lnav li a.active
+{
+    background-color: #8080ff;
+    color: azure;
+}
+
+.rdiv
+{
+    margin: 7px 39.5%;
+    height: 90%;
+    
+    width: 38%;
+    background-color: #f0f0f0a6;
+    padding: 12px 20px;
+    border: 1px solid #c9c9c935;
+}
+.heart
+{
+    margin: 10px 10px;
+    border-collapse: collapse;
+    border: 1px solid #ff80c0;
+}
+.heart tr td
+{
+    text-align: center;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    color: crimson;
+    border: 1px solid #ff80c0;
+}
+.heart tr td.hrt
+{
+    background-color: #ff80c0;
+}
+
+

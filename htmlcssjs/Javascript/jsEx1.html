@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>js学习1</title>
+        <script src="./sample1.js"></script>
+        <style>
+            .title{
+                font-size: 35px;
+                text-align: center;
+                margin: 0px 30px;
+                width: 300px;
+            }
+            .title p{
+                font-family: "时尚中黑简体";
+            }
+            </style>
+
+    </head>
+    <body>
+        <div class="title">
+            <p>Qbook在线平台</p>
+        </div>
+
+        <p style="color: red" id="temp">Pagraph1.........................</p>
+        <p style="color:rgb(97, 192, 255)">
+            <script>
+                var 我 = 1;
+                var 你 = 2;
+                var 沙雕 = 我 + 你;
+                document.write(沙雕);
+            </script>
+        </p>
+        <b>javascript可接受单引号和双引号'hello'  "hello"</b>
+        <br>
+
+        <p id="p1">改变html元素的内容：
+            <button onclick="document.getElementById('p1').innerHTML='改变后的内容';">change</button>
+        </p>
+
+        <p>
+            <button onclick="valueTest();">变量测试variable</button>
+            <button onclick="listTest()">数组测试list</button>
+            <button onclick="objTest()">对象测试object</button>
+        </p>
+        <p>
+            <button onclick="funcTest()">函数测试function</button>
+            <button onclick="thirdMethod()">函数测试 第三种方式</button>
+        </p>
+        
+        <p>
+            <button onclick="this.innerHTML = Date();">显示时间</button>
+            <button onclick="stringTest()">字符串测试</button>
+        </p>
+        <p>
+            <script>
+                var a = "myName";
+                document.write(typeof a);
+                document.write("<br>");
+                document.write(new Date().getDay());
+                document.write("<br>");
+                var i, j;
+                for (i = 1; i < 10; i++) {
+                    for (j = 1; j < 10; j++) {
+                        if (j <= i) {
+                                document.write(j);
+                        }
+                    }
+                    document.write("<br>");
+                }
+                document.write("<br>");
+            </script>
+        </p>
+        
+        <button onclick="hoistingTest()">函数提升</button>
+
+        <br><br>
+
+        <input type="radio" name="rrr" value="a">AAAAA
+        <input type="radio" name="rrr" value="a">BBBBB
+        <br>
+        <input type="checkbox" name="ccc" value="x">AAAAA
+        <input type="checkbox" name="ccc" value="x">BBBBB
+
+        <br><br>
+        
+        <button onclick="objectArray()">对象数组</button>
+        <p id="person"></p>
+    </body>
+</html>

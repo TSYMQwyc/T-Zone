@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css3_4.css">
+        <title>CSS3学习4</title>
+    </head>
+    
+    <body>
+        <p>弹性盒子（容器）</p>
+        <p style="color: red">相关属性：display(主属性) | flex-direction | justify-content | align-items | flex-wrap | align-content </p>
+        <p>元素在弹性容器内会自适应布局大小</p>
+        <div class="flexible">
+            <div class="item">ITEM1</div>
+            <div class="item">ITEM2</div>
+            <div class="item">ITEM3</div>
+            <div class="item">ITEM4</div>
+        </div>
+        <br>
+        <p>flex-direction属性定义元素在弹性容器中的排列方式</p>
+        <span>row-reverse 反向行排列</span>
+        <div class="row_flexible">
+            <div class="item">ITEM1</div>
+            <div class="item">ITEM2</div>
+            <div class="item">ITEM3</div>
+            <div class="item">ITEM4</div>
+        </div>
+        <br>
+        <p>justify-content属性定义容器内元素横向排列方式</p>
+        <span>space-around弹性元素均匀分布在容器中</span>
+        <div class="justify_content">
+            <div class="item2">ITEM1</div>
+            <div class="item2">ITEM2</div>
+            <div class="item2">ITEM3</div>
+            <div class="item2">ITEM4</div>
+        </div>
+        <br>
+        <p>align-items属性定义容器内元素纵向的尺寸</p>
+        stretch弹性元素纵向拉伸
+        <div class="align_items">
+            <div class="item3">ITEM1</div>
+            <div class="item3">ITEM2</div>
+            <div class="item3">ITEM3</div>
+            <div class="item3">ITEM4</div>
+        </div>
+        <br>
+        <p>flex-wrap属性定义弹性容器中元素的换行方式</p>
+        nowrap默认，不换行，容器只有一行    wrap 多行，子元素溢出的部分会换到下一行
+        <div class="flex_wrap">
+            <div class="item3">ITEM1</div>
+            <div class="item3">ITEM2</div>
+            <div class="item3">ITEM3</div>
+            <div class="item3">ITEM4</div>
+            <div class="item3">ITEM5</div>
+        </div>
+        <br>
+        <p>align-content属性 = flex-wrap + align-items + justify-content : 修改wrap属性的单行<u>justify-content</u>属性</p>
+        比justify属性多了一个stretch参数选项 其他样式均一致
+        <div class="align_content">
+            <div class="item3">ITEM1</div>
+            <div class="item3">ITEM2</div>
+            <div class="item3">ITEM3</div>
+            <div class="item3">ITEM4</div>
+            <div class="item3">ITEM5</div>
+        </div>
+        <br>
+        <p>order属性定义元素在容器中的顺序</p>
+        order: &lt;数值&gt; 数值小的排在前面，可以为负数，默认为0
+        <div class="align_content">
+            <div class="item3" style="order: 3">ITEM1</div>
+            <div class="item3" style="order: 6">ITEM2</div>
+            <div class="item3" style="order: 1">ITEM3</div>
+            <div class="item3" >ITEM4</div>
+            <div class="item3" style="order: -1">ITEM5</div>
+        </div>
+        <br>
+        <p>完美居中</p>
+        margin: auto;   水平垂直方向都居中
+        <div class="flexible">
+            <div class="item" style="margin: auto">ITEM1</div>
+        </div>
+        &laquo;&raquo;
+        <p>align-self属性设置容器内元素自身在纵向的对齐方式，相当于元素为自设置align-items属性，也与之相仿</p>
+        示例对照
+        <div class="flexible">
+            <div class="item3 item3_1" style="align-self: flex-start;">ITEM1</div>
+            <div class="item3 item3_1" style="align-self: flex-end;">ITEM2</div>
+            <div class="item3 item3_1" style="align-self: center;">ITEM3</div>
+            <div class="item3 item3_1" style="align-self: baseline">ITEM4</div>
+            <div class="item3 item3_1" style="align-self: stretch;">ITEM5</div>
+        </div>
+        <p>flex属性定义容器内元素如何分配空间</p>
+        flex: &lt;数值&gt;  每个子元素的此项数值相加，各个子元素所占比例
+        <div class="flexible">
+            <div class="item3 item3_1" style="align-self: flex-start; flex: 2">ITEM1 占2</div>
+            <div class="item3 item3_1" style="align-self: flex-end; flex: 1">ITEM2 占1</div>
+            <div class="item3 item3_1" style="align-self: center; flex: 3">ITEM3 占3</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+div
+{
+    float: left;
+    margin-right: 10px;
+    width: 200px;
+    height: 100px;
+}
+/*线性渐变*/
+.linear
+{
+    background: linear-gradient(slateblue, cyan);
+}
+.linearLtR
+{
+    background: linear-gradient(to right, #66ff00, #6600ff);
+}
+.linearRtL
+{
+    background: linear-gradient(to right, #ff3300, #00ff33);
+}
+.linearLTtRB
+{
+    background: linear-gradient(to bottom right, #ff3300, #00ff33);
+}
+.linearLBtRT
+{
+    background: linear-gradient(to top right, #ffcc00, #00ccff);
+}
+
+.colorP
+{
+    display: inline-block;
+    width: 340px;
+    /*以下三条属性一条都不能少，否则无法实现文本颜色渐变*/
+    background-image: linear-gradient(60deg, #ff00ff, #00ff33);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*角度*/
+.linear30deg
+{
+    background: linear-gradient(30deg, #ffff00, #00ffff);
+}
+.linear60deg
+{
+    background: linear-gradient(60deg, #ffff00, #00ffff);
+}
+.linear90deg
+{
+    background: linear-gradient(90deg, #ffff00, #00ffff);
+}
+.linearNcolor
+{
+    background: linear-gradient(#ffff00 20%, red 35%, #99ff00 45%);
+}
+.repeatlinear
+{
+    background: repeating-linear-gradient(blue, #ccff99 20%, #ffd700 30%);
+}
+
+.radial
+{
+    background: radial-gradient(#00ffff, #ffff00, red);
+}

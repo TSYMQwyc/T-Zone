@@ -1,0 +1,235 @@
+body
+{
+	background-image:url('../PIC/timg3.jpg');
+	background-color:#DFDFDF;
+	background-repeat:no-repeat;
+/*	background-attachment:fixed;		*/		/*图片是否跟随其余部分滚动 fixed 固定*/
+/*	background-position:center;			*/		/*图片定位 */
+	background-size:100%;				/*图片拉伸铺满*/
+	
+	color:#303030;
+}
+
+div p
+{
+	background-color:rgba(8,8,8,0.1);			
+	color:#080808;
+	text-align:center;					
+	text-indent:0px;					/*文本缩进*/
+	letter-spacing:1px;					/*字符间距*/
+	font-size:20px;
+}
+p.date
+{
+	text-align:right;
+}
+p.upcs
+{
+	text-transform:uppercase;			/*全大写*/
+}
+p.lwcs
+{
+	text-transform:lowercase;			/*全小写*/
+}
+p.cptlz
+{
+	text-transform:capitalize;			/*每个单词首字母大写*/
+}
+h1
+{
+	text-decoration:overline;			/*上划线*/
+}
+h2
+{
+	text-decoration:line-through;		/*划线*/
+}
+h3
+{
+	text-decoration:underline;			/*下划线*/
+}
+a
+{
+	text-decoration:none;				/*无修饰  用于取消超链接下的下划线*/
+}
+a:link							/*未访问过的链接*/
+{
+	color:#00ff00;
+}
+a:visited						/*已访问过*/
+{
+	color:#ff0000;
+}
+a:hover							/*鼠标放链接上*/
+{	
+	color:#ff00ff;				
+}
+a:active						/*鼠标点击时*/
+{
+	color:#ffff00;
+}
+
+img.top
+{
+	vertical-align:text-top;			/*图片和文本顶部对齐*/
+}
+img.bottom
+{
+	vertical-align:text-bottom;			/*图片和文本底部对齐*/
+}
+
+/*为无序列表添加项目图标*/
+#image_ul 
+{
+	list-style-image:url('../PIC/ul_img.png');	
+	/* list-style-type:none; */					/*注释为解决浏览器兼容问题*/
+	/* padding:0px; */
+	/* margin:0px; */
+}
+/* ul,li */
+/* { */
+	/* background-image:url('./PIC/ul_img.png'); */
+	/* background-repeat:no-repeat; */
+	/* background-position:0px 5px; */
+	/* padding-left:14px; */
+/* } */
+
+/*自定义表格*/
+#mtb
+{
+	margin:0px auto;
+	width:50%;
+	border-collapse:collapse;
+}
+#mtb td, #mtb th
+{
+	border:1px solid purple;
+	padding:2px;
+}
+#mtb th
+{
+	text-align:center;
+	color:#383838;
+	background-color:#eeee00;
+}
+#mtb tr.bc td
+{
+	background-color:rgba(240, 240, 240, 0.7);
+}
+
+/*边框*/
+.dotted
+{
+	border-style:dotted;		/*虚线边框*/
+	border-color:#76B9B1;		/*边框颜色  要先有边框样式才能有颜色*/
+}
+.dashed
+{
+	border-style:dashed;		/*宽虚线边框*/
+}
+.solid
+{
+	border-style:solid;			/*实线边框*/
+}
+.double
+{
+	border-style:double;		/*双边框*/
+	border-width:5px;			/*边框宽度  要先有边框样式才能有宽度*/
+}
+.groove
+{
+	text-align:center;
+	border-style:groove;		/*凹槽边框*/
+	/* border-collapse:collapse; */
+}
+.ridge
+{
+	border-style:ridge;			/*3D垄状边框*/
+	border-width:5px;
+	border-color:#990033;
+}
+.inset
+{
+	border-style:inset;			/*3D嵌入边框*/
+}
+.outset
+{
+	border-style:outset;		/*3D外凸边框*/
+}
+.fixborder												/*单独设置各边*/
+{														/*顺序top right bottom left  */
+	border-style:dashed double groove outset;			/*参数少于4个，按顺序设置边框，默认top=bottom right=left*/
+}														/*隐藏边框 border-style:hidden;	*/
+.radiuborder
+{
+	border-style:solid;
+	border-color:#fff0f5;
+	border-radius:10px;
+	border-left-width:7px;
+	border-left-color:#2AC3A1;
+}
+.groove td
+{
+	border-style:solid;
+	border-color:#fff0f5;
+	border-radius:10px;
+	border-left-width:7px;
+	border-left-color:#2AC3A1;
+}
+
+/*轮廓  样式参照-边框*/
+.otln
+{
+	margin:10px 30% auto;
+	border:2px solid #68DB16;
+	outline:red dotted 3px;				/*轮廓 在元素周围画线*/
+}
+
+tr.collapse {
+    visibility: collapse;				/*可将表格中行折叠*/
+}
+
+ul.inline_ul li
+{											/*将block元素变为inline元素*/
+	display: inline;			
+	color: purple;
+}
+/*定位*/
+p.pos_fixed											/*相对浏览器固定*/
+{
+	position:fixed;
+	margin-top:30px;
+	right:5px;
+}
+p.pos_abslt										/*绝对定位 */
+{
+	position: absolute;
+	top:100px;
+	right:80px;
+}
+div.sticky						/*粘性定位*/
+{
+	position: sticky;
+	position: -webkit-sticky;
+	bottom:0px;
+	top:0px;
+	background-color: #7efc00a9;
+	border: 2px solid #4CAF50;
+	text-align: center
+}
+
+/*overflow*/
+.ovfl							
+{
+	background-color: #54FF9F;
+	padding: 10px;
+	width: 50%;
+	height: 200px;
+	overflow:auto;										/*容器不够显示内容时出现滚动条*/
+	resize: both;											/*可调整容器大小*/
+	border: 1px solid purple;
+}
+
+
+
+
+

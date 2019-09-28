@@ -1,0 +1,30 @@
+*
+{
+    box-sizing: border-box;
+}
+
+.bodydiv
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.web_head
+{
+    height: 70px;
+    width: 100%;
+
+}
+.web_head p
+{
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-style: oblique;
+    display: inline-block;
+    font-size: 5.0em;
+    margin: -25px 8%;
+    background: -webkit-linear-gradient(left, #ff6600, #ff4e99, #ff90ab, #efa110, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}

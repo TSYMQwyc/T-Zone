@@ -1,0 +1,54 @@
+.details
+{
+    width: 100%;
+    padding: 8px;
+    border: 1px dotted #e1e1e1;
+    border-radius: 8px;
+}
+h2
+{
+    text-align: center;
+}
+.details p.bw_cont
+{
+    font-size: 18px;
+    text-indent: 36px;
+}
+.details label
+{
+    color: #343434;
+    font-weight: bold;
+    font-size: 18px;
+}
+input.id
+{
+    width: 30%;
+    height: 40px;
+    border: 1px solid #ff6600;
+    border-radius: 8px;
+    outline: none;
+}
+.comment_cont
+{
+    width: 95%;
+    height: 100px;
+    border: 1px solid #ff6600;
+    border-radius: 8px;
+    outline: none;
+    resize: none;
+    font-size: 15px;
+}
+input[type=submit]
+{
+    width: 7em;
+    height: 2.5em;
+    background: white;
+    border: 1px solid #ff6600;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+input[type=submit]:hover
+{
+    background: #fff1d9;
+}

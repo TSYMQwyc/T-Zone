@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>javascript学习3 jQuery</title>
+        <script src="./jQ/jquery-3.3.1.min.js"></script>
+        <script src="./sample3.js"></script>
+        <link rel="stylesheet" href="./jsEx3.css">
+
+    </head>
+    <body>
+        <div id="cover"></div>
+        <button id="b1">jQ改变文本</button>
+        
+        <p id="p1">I'm not interested in your worth.</p>
+        <p id="p2"></p>
+
+         
+         <div id="frame">
+             <div id="frame_close">&times;</div>
+             <form action="Main.html" method="post">
+                    <fieldset style="border: none">
+                        <legend style="text-align: center; ">个人博客管理系统</legend>
+                        <p><input type="text" name="username" placeholder="输入用户名"></p>
+                        <p><input type="password" name="password" placeholder="输入密码"></p>
+                        <p>
+                            <input type="radio" name="role" value="1" checked="checked"><span></span>游客
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="role" value="2"><span></span>管理员
+                        </p>
+                        <p><input type="submit" value="登录"></p>
+                    </fieldset>
+                </form>
+         </div>
+         
+         <a href="javascript:void(0)" id="login">登录 / 注册</a>
+
+         <p>jQuery效果函数</p>
+         <p>隐藏、显示：<br>
+            $(selector).hide(slow | fast | milliseconds);<br>
+            $(selector).show(slow | fast | milliseconds);<br>
+            $(selector).toggle(slow | fast | milliseconds);
+        </p>
+        <p>
+            淡入淡出：<br>
+            $(selector).fadeIn(slow | fast | milliseconds, callbackFunc());<br>
+            $(selector).fadeOut(slow | fast | milliseconds, callbackFunc());<br>
+            $(selector).fadeToggle(slow | fast | milliseconds, callbackFunc());<br>
+            $(selector).fadeTo(slow | fast | milliseconds, opacityValue, callbackFunc());&nbsp;<b>(用于改变透明度)</b>
+        </p>
+        <p>滑动：<br>
+            $(selector).slidDown(slow | fast | milliseconds, callbackFunc());&nbsp;<b>(向下出现)</b><br>
+            $(selector).slidUp(slow | fast | milliseconds, callbackFunc());&nbsp;<b>(向上出现)</b><br>
+            $(selector).slidToggle(slow | fast | milliseconds, callbackFunc());<b></b><br>
+        </p>
+        <p>动画：<br>
+            $(selector).animate({params}, speed, callbackFunc());<br>
+            $(selector).animate({params}, speed, callbackFunc());&nbsp;<b>(可写多个动画函数，形成动画队列)</b><br>
+            param是动画完成后的样式，通过动画的形式转换成该样式
+            <br>
+            停止动画函数：<br>
+            $(selector).stop(stopAll, goToEnd);<br>
+            参数：stopAll 是否停止全部动画，默认false，<br>
+            当存在动画队列时，true：全部停止，false：停止正在进行的动画，继续后面的动画
+            <br>
+            goToEnd 是否显示动画完成后的样式，默认false<br>
+            当存在动画队列时，true：显示当前动画完成后的样式，在继续后面的动画，false：保持在当前动画的进度，并继续后面的动画
+            <br>
+            
+        </p>
+        <br>
+
+        <button id="animate">动画演示</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="animate2">延迟/间隔动画</button><button id="stop2" >停止</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="animate3">blink</button>
+        <button id="animate4">自制颜色动画测试</button>
+        <br><br>
+        <!-- <div class="box"></div> -->
+        <br><br>
+        <div id="animateBox">啦啦啦啦</div>
+        <br><br>
+        <div id="slideHead">
+            <p style="text-align: center">我的工具箱</p>
+            <div id="slideBox">
+                <p id="p3">工具1</p>
+                <p>工具2</p>
+                <p>工具3</p>
+            </div>
+        </div>
+        <br><br>
+        <button id="ajaxTest">简易ajax测试1</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="ajaxTest2">简易ajax测试2</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="ajaxTest3">简易ajax测试3</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="each">each()函数</button>
+
+        <div id="div1">1234567</div>
+
+    </body>
+</html>
