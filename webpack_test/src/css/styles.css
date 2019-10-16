@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: rgb(250, 245, 241);
+}
+
+#root{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.tvmenu{
+    border-bottom: 1px solid lightgray;
+    color: rgb(44, 44, 44);
+    
+}
+
+.tvlist{
+    margin-top: 5px;
+    color: teal;
+    font-size: 20px;
+    border: 1px solid lightgray;
+    background: rgb(249, 255, 216);
+    padding: 5px;
+}
+
+.link{
+    margin-left: 5px;
+    text-decoration: none;
+    color: rgb(37, 82, 20);
+    cursor: pointer;
+}
+
+h3{
+    color: chocolate;
+}
